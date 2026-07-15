@@ -2,7 +2,6 @@
 سلام خدمت شما دوستان عزیز.
 امروز اومدم با اسکریپت زیباسازی لینوکس و ترموکس
  و توجه کنید این اسکریپت فقط برای ترموکس نیست
- حتما توضیحاتی که جدا شدن رو بخونید 
 
 
  
@@ -19,7 +18,7 @@ pip --version
 python -m ensurepip --upgrade
 python -m pip install --upgrade pip
 python -m pip install art
-nano ~/.bashhrc
+nano ~/.bashrc
 clear
 python3 ~/Termux-Beautification/'termux beautification'
 ```
