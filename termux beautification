@@ -1,0 +1,102 @@
+from art import tprint
+import os
+import time
+
+file_name = "name.txt"
+color_file = "color.txt"
+
+
+if not os.path.exists(file_name):
+    time.sleep(0.65)
+    name = input("what is your name? ")
+    with open(file_name, "w", encoding="utf-8") as f:
+        f.write(name)
+else:
+    with open(file_name, "r", encoding="utf-8") as f:
+        name = f.read()
+
+
+if not os.path.exists(color_file):
+    time.sleep(0.65)
+    print(
+        "your color:  "
+        + "\033[33m" + "yellow  "
+        + "\033[32m" + "green  "
+        + "\033[31m" + "red  "
+        + "\033[35m" + "purple  "
+        + "\033[36m" + "lightblue  "
+        + "\033[0m" + "white  "
+    )
+
+    color = input("Select the color: ")
+
+    with open(color_file, "w", encoding="utf-8") as f:
+        f.write(color)
+else:
+    with open(color_file, "r", encoding="utf-8") as f:
+        color = f.read()
+
+if color == "yellow":
+    time.sleep(0.65)
+    print("\033[33m" + "yellow")
+    time.sleep(0.65)
+    print("\033[33m" + "HELLO " + name)
+    time.sleep(0.65)
+    time.sleep(0.65)
+    tprint(name)
+    time.sleep(0.65)
+    print("welcome to termux" + "\033[0m")
+
+elif color == "green":
+    time.sleep(0.65)
+    print("\033[32m" + "green")
+    time.sleep(0.65)
+    print("\033[32m" + "HELLO " + name)
+    time.sleep(0.65)
+    tprint(name)
+    time.sleep(0.65)
+    print("\033[32m" + "welcome to termux" + "\033[0m")
+
+elif color == "red":
+    time.sleep(0.65)
+    print("\033[31m" + "red")
+    time.sleep(0.65)
+    print("\033[31m" + "HELLO " + name)
+    time.sleep(0.65)
+    tprint(name)
+    time.sleep(0.65)
+    print("\033[31m" + "welcome to termux" + "\033[0m")
+
+elif color == "purple":
+    time.sleep(0.65)
+    print("\033[35m" + "purple")
+    time.sleep(0.65)
+    print("\033[35m" + "HELLO " + name)
+    time.sleep(0.65)
+    tprint(name)
+    time.sleep(0.65)
+    print("\033[35m" + "welcome to termux" + "\033[0m")
+
+elif color == "lightblue":
+    time.sleep(0.65)
+    print("\033[36m" + "lightblue")
+    time.sleep(0.65)
+    print("\033[36m" + "HELLO " + name)
+    time.sleep(0.65)
+    tprint(name)
+    time.sleep(0.65)
+    print("\033[36m" + "welcome to termux" + "\033[0m")
+
+elif color == "white":
+    time.sleep(0.65)
+    print("\033[37m" + "white")
+    time.sleep(0.65)
+    print("\033[37m" + "HELLO " + name)
+    time.sleep(0.65)
+    tprint(name)
+    time.sleep(0.65)
+    print("\033[37m" + "welcome to termux" + "\033[0m")
+
+else:
+    time.sleep(0.65)
+    print("\033[31m" + "color not found" + "\033[0m")
