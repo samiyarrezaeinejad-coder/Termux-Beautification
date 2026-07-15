@@ -10,6 +10,7 @@
 apt update
 apt upgrade
 pkg install git
+git clone https://github.com/samiyarrezaeinejad-coder/Termux-Beautification.git
 pkg install python
 pkg install pip
 python --version
@@ -34,6 +35,10 @@ apt upgrade
 pkg install git
 ```
 برای باز کردن لینک های گیت هابی نیاز هست و خوب هست که روی لینوکس یا ترموکس نصب باشد
+```
+git clone https://github.com/samiyarrezaeinejad-coder/Termux-Beautification.git
+```
+با این دستور فایل پایتونی را دانلود کنید حتما توجه کنید که بدون پکیج گیت نمیتونید فایل رو دانلود کنید
 ```
 pkg install python
 ```
