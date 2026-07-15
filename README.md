@@ -11,6 +11,7 @@ apt update
 apt upgrade
 pkg install git
 git clone https://github.com/samiyarrezaeinejad-coder/Termux-Beautification.git
+termux-setup-storage
 pkg install python
 pkg install pip
 python --version
@@ -20,6 +21,7 @@ python -m pip install --upgrade pip
 python -m pip install art
 nano ~/.bashhrc
 clear
+cd Termux-Beautification
 python ~/termux beautification.py
 ```
 
@@ -38,6 +40,7 @@ pkg install git
 ```
 git clone https://github.com/samiyarrezaeinejad-coder/Termux-Beautification.git
 ```
+
 با این دستور فایل پایتونی را دانلود کنید حتما توجه کنید که بدون پکیج گیت نمیتونید فایل رو دانلود کنید
 ```
 pkg install python
